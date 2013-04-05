@@ -1,0 +1,67 @@
+
+
+body {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container {
+    display: inline-block;
+    margin: 0 auto;
+    // text-align: center;
+}
+
+#header {
+    text-align: left;
+    border: 1px solid blue;
+    margin: 25px 0px 35px 0px;
+}
+
+.title {
+    
+}
+
+.subtitle {
+    color: #696969;
+}
+
+#instructions {
+    border: 1px solid green;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.instruction {
+    display: block;
+    border: 1px solid blue;
+    height: 50px;
+    margin: 15px 0px;
+    // vertical-align: middle;
+}
+
+.circle {
+    background-color: green;
+    width: 50px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    vertical-align: middle;
+    height: 50px;
+    border-radius: 50%;
+    // float: left;
+}
+
+.number {
+    text-align: center;
+    vertical-align: baseline;
+    position: inherit;
+    padding: 15px 0px 15px 0px;
+    // FIXME: DON'T USE PX HERE
+}
+
+.instruction-text {
+    display: inline-block;
+    border: 1px solid yellow;
+    margin-left: 15px;
+}
