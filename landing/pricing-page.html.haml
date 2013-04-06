@@ -1,0 +1,64 @@
+%html
+  %head
+    %title Welcome
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <script src="bootstrap/js/bootstrap.min.js"></script> 
+    <script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+  %body
+    #container
+      .row-fluid
+        .span12
+          #header
+            %h1.title  
+              Schedule faster with 
+              %span#logo CheckIt
+            %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
+        
+      .row-fluid
+        .pricing-box
+          .plan-type Free
+          .plan-price 
+            .dollar-sign $
+            .price 0
+            .rate /mo
+          .plan-market 
+            Who? 
+            .market-detail Try it out. Fall in love.
+        .pricing-box
+          .plan-type Standard
+          .plan-price 
+            .dollar-sign $
+            .price 5
+            .rate /mo
+          .plan-market 
+            Who? 
+            .market-detail The everyday user.
+        .pricing-box
+          .plan-type Max
+          .plan-price 
+            .dollar-sign $
+            .price 15
+            .rate /mo
+          .plan-market 
+            Who? 
+            .market-detail The businessman on the go.
+
+      .row-fluid
+        .feature-box
+          %span.amount 1 
+          %span.feature 1 email per day
+        .feature-box
+          %span.amount 5 
+          %span.feature 5 emails per day
+        .feature-box
+          %span.amount &#8734;
+          %span.feature Unlimited emails per day    
+
+      .row-fluid
+        .span12
+          %footer
+            &#169 2013 checkit. All rights reserved   
