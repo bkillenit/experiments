@@ -6,8 +6,10 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
+    -# = <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
-    <script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="assets/js/custom.js"></script>
   %body
     #container
       .row-fluid
@@ -57,6 +59,15 @@
         .feature-box
           .amount &#8734;
           .feature Unlimited emails per day    
+
+      .row
+        %form{ :action => "", :method => "post", :id => "email-form" } 
+          %fieldset
+            %input.span4{:type => "text", :name => "email", :placeholder => "Sign up for our mailing list"}
+      .row
+        %form{ :action => "", :method => "post", :id => "password-form" } 
+          %fieldset
+            %input.span4{:type => "text", :name => "password", :placeholder => "Enter a password"}
 
       .row-fluid
         .span12
