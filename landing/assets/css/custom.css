@@ -166,19 +166,35 @@ body {
 	vertical-align: baseline;
 }
 
+.form {
+	margin: 0;
+}
+
 #email-form {
-	margin: 20px 0px 0px 0px;
+	margin: 20px -161px 0px 0px;
 }
 
 #password-form {
-	margin-bottom: -60px;
+	margin: 0px -104px 0px 0px;
+}
+
+#mailer-confirm {
+	display: inline-block;
+	margin-left: 10px;
 	visibility: hidden;
+	color: #24D330;
+	font-size: 10px;
+}
+
+#password-info {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 10px;
 }
 
 footer {
 	position: relative;
-	top: 75px;
-
+	top: 50px;
 	border-top: 1px solid #CCCCCC;
 	text-align: left;
 	color: #CCCCCC;

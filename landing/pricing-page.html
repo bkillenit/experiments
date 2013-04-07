@@ -73,17 +73,19 @@
           <div class='feature'>Unlimited emails per day</div>
         </div>
       </div>
-      <div class='row'>
-        <form action='' id='email-form' method='post'>
+      <div class='row form'>
+        <form id='email-form'>
           <fieldset>
             <input class='span4' name='email' placeholder='Sign up for our mailing list' type='text'>
+            <label id='mailer-confirm'>You have joined our mailing list!</label>
           </fieldset>
         </form>
       </div>
-      <div class='row'>
-        <form action='' id='password-form' method='post'>
+      <div class='row form'>
+        <form class='hide' id='password-form'>
           <fieldset>
-            <input class='span4' name='password' placeholder='Enter a password' type='text'>
+            <input class='span4' name='password' placeholder='Enter a password' type='password'>
+            <label id='password-info'>Sign-up for CheckIt</label>
           </fieldset>
         </form>
       </div>
