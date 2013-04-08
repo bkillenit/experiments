@@ -12,6 +12,10 @@ body {
 
 }
 
+#content {
+	min-height: 500px;
+}
+
 #header {
     text-align: left;
     margin: 45px 0px 55px 0px;
@@ -199,8 +203,7 @@ body {
 }
 
 footer {
-	position: absolute;
-	top: 500px;
+	position: relative;
 	height: 20px;
 	width: 100%;
 	border-top: 1px solid #CCCCCC;

@@ -12,67 +12,69 @@
     <script src="assets/js/custom.js"></script>
   %body
     #container
-      .row-fluid
-        .span12
-          #header
-            %h1.title  
-              Schedule faster with 
-              %span#logo CheckIt
-            %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
+      #content
+        .row-fluid
+          .span12
+            #header
+              %h1.title  
+                Schedule faster with 
+                %span#logo CheckIt
+              %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
         
-      .row-fluid
-        .pricing-box
-          .plan-type Free
-          .plan-price 
-            .dollar-sign $
-            .price 0
-            .rate /mo
-          .plan-market 
-            Who? 
-            .market-detail Try it out. Fall in love.
-        #standard.pricing-box
-          .plan-type Standard
-          .plan-price 
-            .dollar-sign $
-            .price 5
-            .rate /mo
-          .plan-market 
-            Who? 
-            .market-detail The everyday user.
-        .pricing-box
-          .plan-type Max
-          .plan-price 
-            .dollar-sign $
-            .price 15
-            .rate /mo
-          .plan-market 
-            Who? 
-            .market-detail The businessman on the go.
+        .row-fluid
+          .pricing-box
+            .plan-type Free
+            .plan-price 
+              .dollar-sign $
+              .price 0
+              .rate /mo
+            .plan-market 
+              Who? 
+              .market-detail Try it out. Fall in love.
+          #standard.pricing-box
+            .plan-type Standard
+            .plan-price 
+              .dollar-sign $
+              .price 5
+              .rate /mo
+            .plan-market 
+              Who? 
+              .market-detail The everyday user.
+          .pricing-box
+            .plan-type Max
+            .plan-price 
+              .dollar-sign $
+              .price 15
+              .rate /mo
+            .plan-market 
+              Who? 
+              .market-detail The businessman on the go.
 
-      .row-fluid
-        .feature-box
-          .amount 1 
-          .feature 1 email per day
-        .feature-box
-          .amount 5 
-          .feature 5 emails per day
-        .feature-box
-          .amount &#8734;
-          .feature Unlimited emails per day    
+        .row-fluid
+          .feature-box
+            .amount 1 
+            .feature 1 email per day
+          .feature-box
+            .amount 5 
+            .feature 5 emails per day
+          .feature-box
+            .amount &#8734;
+            .feature Unlimited emails per day    
 
-      .row.form
-        %form#email-form
-          %fieldset
-            %input.span4{ :type => "text", :name => "email", :placeholder => "Sign up for our mailing list" }
-            %label#mailer-confirm You have joined our mailing list!
-      .row.form
-        %form#password-form
-          %fieldset
-            %input.span4{ :type => "password", :name => "password", :placeholder => "Enter a password" }
-            %label#password-info Sign-up for CheckIt
-      .row.contact#contact-info
-        or contact us at
-        %a{:href => "mailto:contact@somatic.co"} contact@somatic.co      
+        .row.form
+          %form#email-form
+            %fieldset
+              %input.span4{ :type => "text", :name => "email", :placeholder => "Sign up for our mailing list" }
+              %label#mailer-confirm You have joined our mailing list!
+        .row.form
+          %form#password-form
+            %fieldset
+              %input.span4{ :type => "password", :name => "password", :placeholder => "Enter a password" }
+              %label#password-info Sign-up for CheckIt
+        .row.contact#contact-info
+          or contact us at
+          %a{:href => "mailto:contact@somatic.co"} contact@somatic.co  
+
       .row-fluid
         .span12
           %footer
