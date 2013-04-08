@@ -10,7 +10,8 @@ $(document).ready(function(event) {
 		//TODO: change this to a email validator
 		if ( email == '' ) {
             return false;
-        }   
+        }
+        // alert(email);   
 
         //makes an AJAX request to *** sending the email form as data
         //didnt know what language you are going to use and where to place it 
@@ -33,6 +34,7 @@ $(document).ready(function(event) {
         $('#password-form').css('visibility','visible');
         $('#password-form').hide();
 		$("#password-form").fadeIn("slow");
+		$('#contact-info').css('margin-top', 0);
 		$('#mailer-confirm').css('visibility', 'visible');
 
 	});
@@ -60,6 +62,7 @@ $(document).ready(function(event) {
         	email: email,
         	password: password
         }
+        // alert(data.email + " " + data.password); 
 
 		//makes an AJAX request to *** sending the email form as data
 		//didnt know what language you are going to use and where to place it 
