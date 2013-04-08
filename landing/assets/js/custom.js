@@ -28,6 +28,10 @@ $(document).ready(function(event) {
         }); 
 
         //TODO: move these next two lines to the success of the AJAX call 
+        //toggling css visibilty used instead of the jquery show/hide to have the form render in
+        //place without being visible, fixes bug when field appears and it pushes the footer down 
+        $('#password-form').css('visibility','visible');
+        $('#password-form').hide();
 		$("#password-form").fadeIn("slow");
 		$('#mailer-confirm').css('visibility', 'visible');
 
