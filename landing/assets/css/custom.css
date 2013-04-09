@@ -179,7 +179,6 @@ body {
 }
 
 #password-form {
-	visibility: hidden;
 	margin: 0px -104px 0px 0px;
 }
 
@@ -199,7 +198,6 @@ body {
 
 #contact-info {
 	font-size: .9em;
-	margin-top: -25px;
 }
 
 footer {
