@@ -76,12 +76,15 @@ body {
 	margin-top: 25px;
 }
 
+.plan-box {
+	display: inline-block;
+	margin: 0px 4px;
+}
+
 .pricing-box {
 	text-align: left;
 	width: 225px;
-	display: inline-block;
-	margin: 0px 4px;
-	padding: 0px 10px;
+	padding: 1px 10px;
 	background-color: #575757;
 	border-radius: 8px;
 }
@@ -140,11 +143,10 @@ body {
 }
 
 .feature-box {
-	display: inline-block;
 	text-align: left;
 	width: 235px;
 	
-	margin: 8px 4px;
+	margin: 8px 0px;
 	padding: 5px 5px;
 	background-color: #E5E5E5;
 	border-radius: 8px;
