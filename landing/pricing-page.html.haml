@@ -14,12 +14,11 @@
     #container
       #content
         .row-fluid
-          .span12
-            #header
-              %h1.title  
-                Schedule faster with 
-                %span#logo CheckIt
-              %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
+          #header
+            %h1.title  
+              Schedule faster with 
+              %span#logo CheckIt
+            %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
         
         .row-fluid
           .plan-box
@@ -62,18 +61,23 @@
               .amount &#8734;
               .feature Unlimited emails per day    
 
-        .row.form
-          %form#email-form
-            %fieldset
-              %input.span4{ :type => "text", :name => "email", :placeholder => "Sign up for our mailing list" }
-              %label#mailer-confirm You have joined our mailing list!
-          %form#password-form.hide
-            %fieldset
-              %input.span4{ :type => "password", :name => "password", :placeholder => "Enter a password" }
-              %label#password-info Sign-up for CheckIt
-          #contact-info
-            or contact us at
-            %a{:href => "mailto:contact@somatic.co"} contact@somatic.co  
+        .row-fluid.form
+          .span12
+            %form#email-form.row-fluid
+              %fieldset
+                .span4.offset4
+                  %input{ type: "text", name: "email", placeholder: "Sign up for our mailing list" }
+                .span3  
+                  #mailer-confirm You have joined our mailing list!
+            %form#password-form.hide.row-fluid
+              %fieldset
+                .span4.offset4
+                  %input{ type: "password", name: "password", placeholder: "Enter a password" }
+                .span2  
+                  %label#password-info Sign-up for CheckIt
+            #contact-info.row-fluid
+              or contact us at
+              %a{ href: "mailto:contact@somatic.co"} contact@somatic.co  
 
       .row-fluid
         .span12
