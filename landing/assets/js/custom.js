@@ -30,8 +30,7 @@ $(document).ready(function(event) {
 
         //TODO: move these next two lines to the success of the AJAX call 
 		$("#password-form").fadeIn("slow");
-		$('#contact-info').css('margin-top', 0);
-		$('#mailer-confirm').css('visibility', 'visible');
+		$('#mailer-confirm').show();
 
 	}); //end of email-form submit function
 

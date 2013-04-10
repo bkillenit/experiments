@@ -66,15 +66,13 @@
             %form#email-form.row-fluid
               %fieldset
                 .span4.offset4
-                  %input{ type: "text", name: "email", placeholder: "Sign up for our mailing list" }
-                .span3  
-                  #mailer-confirm You have joined our mailing list!
+                  %input{type: "text", name: "email", placeholder: "Sign up for our mailing list" }
+                .span3#mailer-confirm.hide You have joined our mailing list!
             %form#password-form.hide.row-fluid
               %fieldset
                 .span4.offset4
                   %input{ type: "password", name: "password", placeholder: "Enter a password" }
-                .span2  
-                  #password-info Sign-up for CheckIt
+                .span3#password-info Sign-up for CheckIt
             #contact-info.row-fluid
               or contact us at
               %a{ href: "mailto:contact@somatic.co"} contact@somatic.co  
