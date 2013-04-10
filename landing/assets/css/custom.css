@@ -60,13 +60,11 @@ body {
 }
 
 .instruction-text {
-	// position: absolute;
     display: inline-block;
     height: inherit;
     width: 85%;
     margin-left: 15px;	
     vertical-align: middle;
-
   
     font-weight: bold;
     font-size: 1.2em;
@@ -169,6 +167,10 @@ body {
 	display: inline-block;
 	margin-left: 3px;
 	vertical-align: baseline;
+}
+
+form {
+	margin: 0;
 }
 
 #password-form input, #email-form input {
