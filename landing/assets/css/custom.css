@@ -12,12 +12,20 @@ body {
 }
 
 #content {
-	min-height: 500px;
+	min-height: 550px;
 }
 
 #header {
     text-align: left;
     margin: 45px 0px 55px 0px;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#header {
+		position: relative;
+		margin: 35px 0px 30px 0px;
+	}
 }
 
 .title {
@@ -36,7 +44,15 @@ body {
 #instructions {
     text-align: left;
     position: relative;
-    left: 25px;
+    margin-left: 25px;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#instructions {
+		float: left;
+		margin-left: 0;
+	}
 }
 
 .instruction {
@@ -45,6 +61,7 @@ body {
     height: 50px;
     margin: 15px 0px;
 }
+
 
 .circle {
 	float: left;
@@ -59,19 +76,49 @@ body {
     border-radius: 50%;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.circle {
+		float: left;
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 1.3em;
+	}
+}
+
 .instruction-text {
     display: inline-block;
     height: inherit;
     width: 85%;
-    margin-left: 15px;	
-    vertical-align: middle;
+    margin-left: 15px;
+    padding-top: 7px;	
   
     font-weight: bold;
     font-size: 1.2em;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.instruction-text {
+		float: left;
+		padding-top: 0px;
+		width: 80%;
+		vertical-align: middle;
+	}
+}
+
 #pricing-link {
 	margin-top: 25px;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#pricing-link {
+		position: relative;
+		margin: 55px 0px 30px 0px;
+	}
 }
 
 .plan-box {
@@ -176,6 +223,13 @@ form {
 #password-form input, #email-form input {
 	width: 100%;
 	height: 23px;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#password-form input, #email-form input {
+		height: 40px;
+	}
 }
 
 #email-form {
