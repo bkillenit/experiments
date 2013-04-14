@@ -9,7 +9,6 @@
     -# = <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
     <script src="assets/js/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
-    <script src="assets/js/custom.js"></script>
   %body
     #container
       #content
@@ -62,28 +61,16 @@
               .feature Unlimited emails per day    
 
         .row-fluid.form
-          .span12
-            %form#email-form.row-fluid
+          .span4.offset4
+            %form#email-form.validate{ action: "http://checkit.us4.list-manage1.com/subscribe/post?u=aedd7569d76eb6b92396e4c97&amp;id=74cebc2078", method: "post", name: "mc-embedded-subscribe-form", novalidate:  "", target: "_blank"}
               %fieldset
-                .span4.offset4
-                  %input{type: "text", name: "email", placeholder: "Sign up for our mailing list" }
-                .span3#mailer-confirm.hide You have joined our mailing list!
-            %form#password-form.hide.row-fluid
-              %fieldset
-                .span4.offset4
-                  %input{ type: "password", name: "password", placeholder: "Enter a password" }
-                .span3#password-info Sign-up for CheckIt
+                %div{ for: "mce-EMAIL" } Subscribe to our mailing list
+                %input#mce-EMAIL.email{name: "EMAIL", placeholder: "email address", required: "", type: "email", value: ""}
+                .clear
+                %input#mailchimp-subscribe.btn.btn-success.span2{ name: "subscribe", type: "submit", value: "Subscribe"}
             #contact-info.row-fluid
               or contact us at
               %a{ href: "mailto:contact@somatic.co"} contact@somatic.co  
-          .span12
-            %link{:href => "http://cdn-images.mailchimp.com/embedcode/slim-081711.css", :rel => "stylesheet", :type => "text/css"}
-            #mc_embed_signup
-            %form#mc-embedded-subscribe-form.validate{:action => "http://checkit.us4.list-manage1.com/subscribe/post?u=aedd7569d76eb6b92396e4c97&amp;id=74cebc2078", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-              %label{:for => "mce-EMAIL"} Subscribe to our mailing list
-              %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "email address", :required => "", :type => "email", :value => ""}/
-              .clear
-                %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
       .row-fluid
         .span12
           %footer
