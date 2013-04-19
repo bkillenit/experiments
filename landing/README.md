@@ -10,6 +10,7 @@ checkit
 - set up basic REST API for pipeline
 - clean up NLP pipeline output
 
+### finished
 - / refactor CSS shapes except circle into bootstap spans
 - / use media queries to turn the circles into regular list items or turn the text tags into something different that renders better at narrow width
 - / set up infrastructure for mailing list
