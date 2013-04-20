@@ -50,7 +50,7 @@ build a performant web application in 2013.
 
 Again, though, we can't escape it: _magic is expensive_. 
 But: Not all magic is created alike. 
-First, though: go [ watch the magic ][http://www.meteor.com/screencast].
+First, though: go [watch the magic](http://www.meteor.com/screencast).
 
 Incredible, right? But shit, that is a _lot_ of magic.
 
@@ -60,8 +60,7 @@ simplicity matters?). It doesn't make any restrictions on how
 you write your HTML or how you lay out your application's architecture.
 For example: data binding in meteor (the real "wow factor" in that screencast
 from earlier) is only 74 lines of javascript.
-You can go [read it right
-now][https://github.com/meteor/meteor/blob/master/packages/deps/deps.js].
+You can go [read it right now](https://github.com/meteor/meteor/blob/master/packages/deps/deps.js).
 
 
 Meteor consists of two components: the Meteor server and meteor.js, the meteor
@@ -79,7 +78,7 @@ while keeping so much of what made Meteor great in the first place.
 
 Hopefully, I've made a convincing case for Meteor.js.
 
-Please check out the [seven principles of Meteor][docs.meteor.com] and **read
+Please check out the [seven principles of Meteor](docs.meteor.com) and **read
 the docs** while you're at it. 
 
 That just about sums it up. If you're not convinced, please comment on this
