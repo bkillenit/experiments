@@ -19,6 +19,7 @@
     ga('send', 'pageview');
 
     </script>
+
   %body
     #container
       #content
@@ -28,25 +29,25 @@
               %h1.title  
                 Schedule faster with 
                 %span#logo CheckIt
-              %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll do it for you.
+              %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll enter it for you.
 
         .row-fluid
           .span8.offset2
             %h2#hello Hello! You caught us before we're ready.
             %div#notify We're working hard to put the finishing touches onto CheckIt. Things are going well and it should be ready to help you with scheduling very soon. If you'd like us to send you a reminder when we're ready, just put your email in below:
 
-          .row-fluid.form
-            .span4.offset4
-              %form#email-form.validate{ action: "http://checkit.us4.list-manage1.com/subscribe/post?u=aedd7569d76eb6b92396e4c97&amp;id=74cebc2078", method: "post", name: "mc-embedded-subscribe-form", novalidate:  "", target: "_blank"}
-                %fieldset
-                  %input#mce-EMAIL.email{name: "EMAIL", placeholder: "email address", required: "", type: "text", value: ""}
-                  .clear
-                  %input#mailchimp-subscribe.btn.btn-success.span2{ name: "subscribe", type: "submit", value: "Subscribe"}
-              #contact-info.row-fluid
-                or contact us at
-                %a{ href: "mailto:contact@somatic.co"} contact@somatic.co     
-
+        .row-fluid.form
+          .span4.offset4
+            %form#email-form.validate{ action: "http://checkit.us4.list-manage1.com/subscribe/post?u=aedd7569d76eb6b92396e4c97&amp;id=74cebc2078", method: "post", name: "mc-embedded-subscribe-form", novalidate:  "", target: "_blank"}
+              %fieldset
+                %input#mce-EMAIL.email{name: "EMAIL", placeholder: "email address", required: "", type: "text", value: ""}
+                .clear
+                %input#mailchimp-subscribe.btn.btn-success.span2{ name: "subscribe", type: "submit", value: "Subscribe"}
+            #contact-info.row-fluid
+              or contact us at
+              %a{ href: "mailto:contact@somatic.co"} contact@somatic.co     
+            
       .row-fluid
-        .span12
+        .span-12
           %footer
             &#169 2013 checkit. All rights reserved   
