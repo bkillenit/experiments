@@ -4,7 +4,7 @@ checkit
 
 ### todo
 
-- set up the 'you caught us before we're ready' page
+- / set up the 'you caught us before we're ready' page
 - figure out a fast email response system (templating, etc)
 - set up the infrastructure for OAuth
 - set up basic REST API for pipeline
