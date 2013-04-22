@@ -118,7 +118,10 @@ body {
 }
 
 #pricing-link {
-	margin-top: 25px;
+	margin-top: 20px;
+	height: 30px;
+	font-weight: bold;
+	line-height: 30px;
 }
 
 /* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
