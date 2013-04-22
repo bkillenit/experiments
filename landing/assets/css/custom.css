@@ -94,9 +94,17 @@ body {
     width: 85%;
     margin-left: 15px;
     padding-top: 7px;	
-  
-    font-weight: bold;
-    font-size: 1.2em;
+}
+
+.heading-text {
+	font-weight: bold;
+    font-size: 1.3em;
+}
+
+.subheading-text {
+	display: block;
+	font-size: 1em;
+	color: gray;
 }
 
 /* Smartphones (portrait and landscape) or Browsers at a narrow resolution */

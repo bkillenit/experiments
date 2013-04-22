@@ -13,29 +13,37 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/google-analytics.js"></script>
   %body
-    #container
+    #container-fluid
       #content
         .row-fluid
-          #header
-            %h1.title  
-              Schedule faster with 
-              %span#logo CheckIt
-            %h4.subtitle  Forward any event data that you would normally enter into your Google calendar to us, and we'll enter it for you.
-        
-          #instructions
-            .row-fluid
-              #instruction-1.instruction
-                %span.circle 1   
-                -# =  TODO: make this a sweeter word
-                %span.instruction-text Forward an email to planner@checkit.co  
-            .row-fluid  
-              #instruction-2.instruction 
-                %span.circle 2 
-                %span.instruction-text We send you an email making sure we got it right. 
-            .row-fluid  
-              #instruction-3.instruction
-                %span.circle 3 
-                %span.instruction-text Our innovative technology takes that information and turns it into an event on your google calendar. 
+          .span12.offset1
+            #header
+              %h1.title  
+                Schedule faster with 
+                %span#logo CheckIt
+              %h4.subtitle  We automate the process of scheduling events sent to you via email on your Google calendar
+          
+          .span12.offset1
+            #instructions
+              .row-fluid
+                #instruction-1.instruction
+                  %span.circle 1   
+                  -# =  TODO: make this a sweeter word
+                  .instruction-text
+                    %span.heading-text Forward an email to planner@checkit.co  
+                    %span.subheading-text For example, meeting at 8pm on Tuesday at the office?
+              .row-fluid  
+                #instruction-2.instruction 
+                  %span.circle 2 
+                  .instruction-text
+                    %span.heading-text We send you an email making sure we got it right. 
+                    %span.subheading-text You confirm we understand what you sent us.
+              .row-fluid  
+                #instruction-3.instruction
+                  %span.circle 3 
+                  .instruction-text
+                    %span.heading-text We turn it into an event on your Google calendar
+                    %span.subheading-text Never enter an event into your calendar ever again!
             
           .row-fluid
             %a#pricing-link.btn.btn-success{ href: "caught-us.html" } Plans and Pricing.
