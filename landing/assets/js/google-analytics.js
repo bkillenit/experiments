@@ -7,4 +7,6 @@
   ga('create', 'UA-40000925-1', 'checkit.co');
   ga('send', 'pageview');
 
+  _gaq.push(['_setLocalGifPath', 'http://checkit.co/__utm.gif']);
+  _gaq.push(['_setLocalRemoteServerMode']);
 </script>
