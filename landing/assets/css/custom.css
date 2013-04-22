@@ -62,6 +62,12 @@ body {
     margin: 15px 0px;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.instruction{
+		height: inherit;
+	}
+}
 
 .circle {
 	float: left;
@@ -79,7 +85,6 @@ body {
 /* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
 	.circle {
-		float: left;
 		display: inline-block;
 		width: 35px;
 		height: 35px;
@@ -89,16 +94,24 @@ body {
 }
 
 .instruction-text {
-    display: inline-block;
+    float: left;
     height: inherit;
     width: 85%;
-    margin-left: 15px;
+    margin-left: 20px;
     padding-top: 7px;	
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.instruction-text {
+		display: block;
+		margin-left: 15px;
+	}
 }
 
 .heading-text {
 	font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .subheading-text {
