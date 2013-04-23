@@ -15,6 +15,13 @@ body {
 	min-height: 550px;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#content {
+		margin-left: -10px;
+	}
+}
+
 #header {
     text-align: left;
     margin: 45px 0px 55px 0px;
@@ -24,7 +31,7 @@ body {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
 	#header {
 		position: relative;
-		margin: 35px 0px 30px 0px;
+		margin: 25px 0px 30px 0px;
 	}
 }
 
@@ -62,6 +69,13 @@ body {
     color: #696969;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.subtitle {
+		line-height: 1.4em;
+	}
+}
+
 /* iPhones with retina display */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 	.subtitle {
@@ -94,6 +108,14 @@ body {
 		float: left;
 		margin-left: -23px;
 	}	
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#instructions .row-fluid {
+		float: left;
+		margin-bottom: 50px;
+	}
 }
 
 .instruction {
@@ -135,7 +157,7 @@ body {
 /* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
 	.circle {
-		display: inline-block;
+		float: left;
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
@@ -167,9 +189,12 @@ body {
 /* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
 	.instruction-text {
-		display: block;
+		display: inline-block;
 		margin-left: 15px;
-		font-size: 1.7em;
+		font-size: 1em;
+		padding-top: 0px;
+		width: 80%;
+		vertical-align: middle;
 	}
 }
 
@@ -182,6 +207,14 @@ body {
 .heading-text {
 	font-weight: bold;
     font-size: 1.4em;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.heading-text {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
 }
 
 /* iPhones with retina display */
@@ -198,22 +231,25 @@ body {
 	color: gray;
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	.subheading-text {
+		float: left;
+		font-size: 1.1em;
+		margin-left: -50px;
+		margin-top: 10px;
+		line-height: 1.6em;
+		width: 100%;
+		color: #808080;
+	}
+}
+
 /* iPhones with retina display */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 	.subheading-text {
-		font-size: 1.7em;
+		font-size: 1em;
 		line-height: 1.2em;
 	}		
-}
-
-/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
-	.instruction-text {
-		float: left;
-		padding-top: 0px;
-		width: 80%;
-		vertical-align: middle;
-	}
 }
 
 #pricing-link {
@@ -228,7 +264,7 @@ body {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
 	#pricing-link {
 		position: relative;
-		margin: 55px 0px 30px 0px;
+		margin: 45px 0px 30px 0px;
 	}
 }
 
@@ -268,6 +304,14 @@ body {
 
 #notify {
 	color: gray;
+}
+
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	#notify {
+		color: #808080;
+		line-height: 1.6em;
+	}
 }
 
 /* iPhones with retina display */
