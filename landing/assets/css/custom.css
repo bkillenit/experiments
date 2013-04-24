@@ -6,6 +6,20 @@ body {
     // background-image: url('../img/brillant.png');
 }
 
+/* Smartphones (portrait and landscape) or Browsers at a narrow resolution */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (min-width : 320px) and (max-width : 480px) {
+	body {
+		padding-right: 10px;
+	}
+}
+
+/* iPhones with retina display */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		padding-right: 0px;
+	}		
+}
+
 #container {
     display: inline-block;
     margin: 0 auto;
@@ -254,7 +268,7 @@ body {
 		margin-left: -50px;
 		margin-top: 10px;
 		line-height: 1.6em;
-		width: 100%;
+		width: 300px;
 		color: #808080;
 	}
 }
@@ -267,6 +281,7 @@ body {
 		font-size: 3em;
 		line-height: 1.4em;
 		color: #666666;
+		width: inherit;
 	}		
 }
 
